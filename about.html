@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Jaipur District Table Tennis Association (JDTTA)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-hero {
+            background: var(--primary-blue);
+            color: white;
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        .mission-vision {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .mv-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .bearers {
+            padding: 4rem 0;
+            background: var(--bg-off-white);
+        }
+
+        .bearer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .bearer-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .bearer-role {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .bearer-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .mv-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpg" alt="Jaipur District Table Tennis Association (JDTTA) Logo">
+                <span>JAIPUR DISTRICT TABLE TENNIS ASSOC.</span>
+            </a>
+            <div class="hamburger">☰</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div class="container">
+            <h2
+                style="color: rgba(255,255,255,0.9); font-size: 1.2rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px;">
+                ABOUT</h2>
+            <h1>Jaipur District Table Tennis Association (JDTTA)</h1>
+            <div style="max-width: 800px; margin: 0 auto; text-align: justify; text-align-last: center;">
+                <p style="margin-bottom: 1rem;">Jaipur District Table Tennis Association (JDTTA) is where champions are
+                    forged and dreams come alive. Affiliated with Rajasthan Table Tennis Association, District Olympic
+                    Association Jaipur, and District Sports Council Jaipur, JDTTA stands as a beacon for aspiring
+                    athletes who strive for excellence both on and off the table.</p>
+                <p style="margin-bottom: 1rem;">Here, every player is encouraged to push boundaries, embrace discipline,
+                    and unleash their potential. Our rigorous training programs, competitive tournaments, and supportive
+                    environment create a launchpad for future table tennis stars. We believe in the power of hard work,
+                    sportsmanship, and teamwork—values that turn passion into victory.</p>
+                <p style="margin-bottom: 1rem;">At JDTTA, every rally is a story of courage, every match a testament to
+                    perseverance, and every win a celebration of dedication. Our players inspire Jaipur, setting
+                    examples for the next generation and bringing pride to the city with every medal, handshake, and
+                    heartfelt cheer.</p>
+                <p>If you are driven by the spirit of sports, the thrill of competition, and the love for table tennis,
+                    JDTTA is your arena. Join us and play not just for points, but for legacy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-vision">
+        <div class="container mv-grid">
+            <div>
+                <h2 class="section-title" style="text-align: left;">Our Mission</h2>
+                <p>To inspire and nurture a passion for table tennis across Jaipur by providing opportunities for
+                    players of all ages and skill levels to learn, compete, and excel. We strive to build a vibrant
+                    sports community rooted in teamwork, integrity, and respect. By organizing events, coaching
+                    programs, and talent development initiatives, we aim to empower athletes, promote healthy
+                    lifestyles, and uphold the values of sportsmanship. Our association is committed to raising Jaipur’s
+                    stature in table tennis, supporting every journey from grassroots to championship, and fostering
+                    unity through the love of the game.</p>
+            </div>
+            <div>
+                <h2 class="section-title" style="text-align: left;">Our Vision</h2>
+                <p>To become a leading force in table tennis, recognized for excellence, innovation, and inclusivity. We
+                    aspire to make Jaipur a prominent center for table tennis talent and culture, where enthusiasm for
+                    the sport inspires healthy living and lifelong friendships. By fostering skill development,
+                    providing world-class facilities, and encouraging community participation, we aim to shape champions
+                    who excel at every level and bring pride to our city and nation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="bearers">
+        <div class="container">
+            <h2 class="section-title">Office Bearers</h2>
+            <p class="section-subtitle">The dedicated team leading the association.</p>
+
+            <div class="bearer-grid">
+                <div class="bearer-card">
+                    <div class="bearer-role">President</div>
+                    <div class="bearer-name">Shri Krishan Maheshwari</div>
+                </div>
+                <div class="bearer-card">
+                    <div class="bearer-role">Treasurer</div>
+                    <div class="bearer-name">Rajeev Agrawal</div>
+                </div>
+                <div class="bearer-card">
+                    <div class="bearer-role">Secretary</div>
+                    <div class="bearer-name">Sachit Gupta</div>
+                </div>
+                <div class="bearer-card">
+                    <div class="bearer-role">Senior Vice President</div>
+                    <div class="bearer-name">Anil Goenka</div>
+                </div>
+                <div class="bearer-card">
+                    <div class="bearer-role">Vice President</div>
+                    <div class="bearer-name">Manmohan Singh Rawat</div>
+                    <div class="bearer-name">Deepak Kapoor</div>
+                    <div class="bearer-name">Rohit Jain</div>
+                </div>
+                <div class="bearer-card">
+                    <div class="bearer-role">Joint Secretary</div>
+                    <div class="bearer-name">Prateek Sharma</div>
+                    <div class="bearer-name">Dinesh Singh Negi</div>
+                    <div class="bearer-name">Jyoti Goyal</div>
+                </div>
+                <div class="bearer-card">
+                    <div class="bearer-role">Executive Member</div>
+                    <div class="bearer-name">Col Rajesh Mohan Sharma</div>
+                    <div class="bearer-name">Basant Ojha</div>
+                    <div class="bearer-name">M.D. Shukla</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 4rem 0; text-align: center;">
+        <div class="container">
+            <h2 class="section-title">Affiliations</h2>
+            <p>We are proudly affiliated with:</p>
+            <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; flex-wrap: wrap;">
+                <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 8px;">Rajasthan Table Tennis
+                    Association</div>
+                <div style="padding: 1rem; border: 1px solid #ddd; border-radius: 8px;">Table Tennis Federation of India
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Jaipur District Table Tennis Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

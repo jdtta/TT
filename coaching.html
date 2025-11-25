@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coaching & Training - Jaipur District Table Tennis Association (JDTTA)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .coach-card {
+            display: flex;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .coach-img {
+            width: 200px;
+            background: #eee;
+            object-fit: cover;
+        }
+
+        .coach-info {
+            padding: 2rem;
+            flex: 1;
+        }
+
+        .program-card {
+            background: var(--primary-blue);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .coach-card {
+                flex-direction: column;
+            }
+
+            .coach-img {
+                width: 100%;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpg" alt="Jaipur District Table Tennis Association (JDTTA) Logo">
+                <span>JAIPUR DISTRICT TABLE TENNIS ASSOC.</span>
+            </a>
+            <div class="hamburger">☰</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="coaching.html" class="nav-link active">Coaching</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <h1 class="section-title">Coaching & Training</h1>
+            <p class="section-subtitle">Learn from the best. Join our training programs designed for all skill levels.
+            </p>
+
+            <h2 style="margin-bottom: 2rem;">Our Coaches</h2>
+
+            <div class="coach-card">
+                <img src="assets/images/logo-placeholder.svg" alt="Coach" class="coach-img"> <!-- Placeholder -->
+                <div class="coach-info">
+                    <h3>Head Coach Name</h3>
+                    <p style="color: var(--primary-blue); font-weight: 600; margin-bottom: 1rem;">NIS Certified |
+                        Ex-National Player</p>
+                    <p>Specializes in advanced techniques and multi-ball training. Has produced over 10 national level
+                        players.</p>
+                </div>
+            </div>
+
+            <div class="coach-card">
+                <img src="assets/images/logo-placeholder.svg" alt="Coach" class="coach-img"> <!-- Placeholder -->
+                <div class="coach-info">
+                    <h3>Assistant Coach Name</h3>
+                    <p style="color: var(--primary-blue); font-weight: 600; margin-bottom: 1rem;">State Champion</p>
+                    <p>Focuses on beginner foundations and footwork drills. Great with kids and junior batches.</p>
+                </div>
+            </div>
+
+            <h2 style="margin: 4rem 0 2rem;">Training Programs</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div class="program-card">
+                    <h3>Beginner</h3>
+                    <p>Basics of grip, stance, and strokes.</p>
+                </div>
+                <div class="program-card" style="background: var(--secondary-green);">
+                    <h3>Intermediate</h3>
+                    <p>Spin control, footwork, and consistency.</p>
+                </div>
+                <div class="program-card" style="background: var(--accent-gold); color: black;">
+                    <h3>Advanced</h3>
+                    <p>Tactics, match play, and high-performance drills.</p>
+                </div>
+                <div class="program-card" style="background: #333;">
+                    <h3>Women's Development</h3>
+                    <p>Special batches to promote women in sports.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem; background: var(--bg-off-white); padding: 3rem; border-radius: 12px;">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Coaching Enquiry</h2>
+                <form style="max-width: 600px; margin: 0 auto; display: grid; gap: 1rem;">
+                    <input type="text" placeholder="Your Name"
+                        style="padding: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="email" placeholder="Email Address"
+                        style="padding: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+                    <input type="tel" placeholder="Phone Number"
+                        style="padding: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+                    <select style="padding: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+                        <option>Select Program</option>
+                        <option>Beginner</option>
+                        <option>Intermediate</option>
+                        <option>Advanced</option>
+                    </select>
+                    <textarea placeholder="Message" rows="4"
+                        style="padding: 1rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                    <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Jaipur District Table Tennis Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

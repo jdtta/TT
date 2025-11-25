@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Jaipur District Table Tennis Association (JDTTA)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            height: 250px;
+            background: #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .video-section {
+            margin-top: 4rem;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpg" alt="Jaipur District Table Tennis Association (JDTTA) Logo">
+                <span>JAIPUR DISTRICT TABLE TENNIS ASSOC.</span>
+            </a>
+            <div class="hamburger">☰</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link">Events</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section style="padding: 4rem 0;">
+        <div class="container">
+            <h1 class="section-title">Gallery</h1>
+            <p class="section-subtitle">Moments from our tournaments, training sessions, and events.</p>
+
+            <div class="gallery-grid">
+                <!-- Placeholders -->
+                <div class="gallery-item"><img src="assets/images/logo-placeholder.svg" alt="Gallery Image 1"></div>
+                <div class="gallery-item"><img src="assets/images/logo-placeholder.svg" alt="Gallery Image 2"></div>
+                <div class="gallery-item"><img src="assets/images/logo-placeholder.svg" alt="Gallery Image 3"></div>
+                <div class="gallery-item"><img src="assets/images/logo-placeholder.svg" alt="Gallery Image 4"></div>
+                <div class="gallery-item"><img src="assets/images/logo-placeholder.svg" alt="Gallery Image 5"></div>
+                <div class="gallery-item"><img src="assets/images/logo-placeholder.svg" alt="Gallery Image 6"></div>
+            </div>
+
+            <div class="video-section">
+                <h2 class="section-title">Highlights</h2>
+                <div class="video-container">
+                    <!-- Placeholder video embed -->
+                    <div
+                        style="display: flex; align-items: center; justify-content: center; height: 100%; color: white; font-size: 1.5rem;">
+                        Video Placeholder (YouTube Embed)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Jaipur District Table Tennis Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

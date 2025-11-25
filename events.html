@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Tournaments - Jaipur District Table Tennis Association (JDTTA)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .calendar-view {
+            margin-bottom: 4rem;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .month-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 1px;
+            background: #ddd;
+            border: 1px solid #ddd;
+        }
+
+        .day-cell {
+            background: white;
+            min-height: 100px;
+            padding: 0.5rem;
+            position: relative;
+        }
+
+        .day-number {
+            font-weight: 600;
+            color: #999;
+        }
+
+        .event-marker {
+            background: var(--primary-blue);
+            color: white;
+            font-size: 0.8rem;
+            padding: 2px 4px;
+            border-radius: 4px;
+            margin-top: 4px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .event-list-item {
+            display: flex;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .event-list-date {
+            text-align: center;
+            min-width: 80px;
+        }
+
+        .date-day {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            line-height: 1;
+        }
+
+        .date-month {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        .event-list-info {
+            flex: 1;
+        }
+
+        .event-list-info h3 {
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .event-list-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .event-list-date {
+                display: flex;
+                gap: 0.5rem;
+                align-items: baseline;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.jpg" alt="Jaipur District Table Tennis Association (JDTTA) Logo">
+                <span>JAIPUR DISTRICT TABLE TENNIS ASSOC.</span>
+            </a>
+            <div class="hamburger">☰</div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="events.html" class="nav-link active">Events</a>
+                <a href="careers.html" class="nav-link">Careers</a>
+                <a href="coaching.html" class="nav-link">Coaching</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section style="background: var(--bg-off-white); padding: 4rem 0;">
+        <div class="container">
+            <h1 class="section-title">Events Calendar</h1>
+            <p class="section-subtitle">Stay updated with upcoming tournaments and matches.</p>
+
+            <!-- Simple Calendar Visual -->
+            <div class="calendar-view">
+                <div class="calendar-header">
+                    <h2>December 2025</h2>
+                    <div>
+                        <button class="btn btn-outline"
+                            style="color: var(--primary-blue); border-color: var(--primary-blue);">Previous</button>
+                        <button class="btn btn-outline"
+                            style="color: var(--primary-blue); border-color: var(--primary-blue);">Next</button>
+                    </div>
+                </div>
+                <div class="month-grid">
+                    <!-- Days header -->
+                    <div class="day-cell" style="min-height: auto; font-weight: bold; text-align: center;">Sun</div>
+                    <div class="day-cell" style="min-height: auto; font-weight: bold; text-align: center;">Mon</div>
+                    <div class="day-cell" style="min-height: auto; font-weight: bold; text-align: center;">Tue</div>
+                    <div class="day-cell" style="min-height: auto; font-weight: bold; text-align: center;">Wed</div>
+                    <div class="day-cell" style="min-height: auto; font-weight: bold; text-align: center;">Thu</div>
+                    <div class="day-cell" style="min-height: auto; font-weight: bold; text-align: center;">Fri</div>
+                    <div class="day-cell" style="min-height: auto; font-weight: bold; text-align: center;">Sat</div>
+
+                    <!-- Empty cells for start of month -->
+                    <div class="day-cell"></div>
+                    <div class="day-cell"></div>
+
+                    <!-- Days -->
+                    <div class="day-cell">
+                        <div class="day-number">1</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">2</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">3</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">4</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">5</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">6</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">7</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">8</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">9</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">10</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">11</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">12</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">13</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">14</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">15</div>
+                        <span class="event-marker">District Champ...</span>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">16</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">17</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">18</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">19</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">20</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">21</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">22</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">23</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">24</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">25</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">26</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">27</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">28</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">29</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">30</div>
+                    </div>
+                    <div class="day-cell">
+                        <div class="day-number">31</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 2rem;">Upcoming Events List</h2>
+
+            <div class="event-list-item">
+                <div class="event-list-date">
+                    <div class="date-day">15</div>
+                    <div class="date-month">Dec</div>
+                </div>
+                <div class="event-list-info">
+                    <h3>District Championship 2025</h3>
+                    <p><strong>Venue:</strong> SMS Stadium, Jaipur</p>
+                    <p><strong>Categories:</strong> U11, U13, U15, U17, U19, Men, Women</p>
+                    <p style="margin-top: 0.5rem; color: var(--gray-500);">Registration closes on Dec 10, 2025</p>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+
+            <div class="event-list-item">
+                <div class="event-list-date">
+                    <div class="date-day">10</div>
+                    <div class="date-month">Jan</div>
+                </div>
+                <div class="event-list-info">
+                    <h3>Inter-School Tournament</h3>
+                    <p><strong>Venue:</strong> Jaipur Sports Complex</p>
+                    <p><strong>Categories:</strong> Team Events, Singles</p>
+                </div>
+                <div>
+                    <a href="#" class="btn btn-primary">Register Now</a>
+                </div>
+            </div>
+
+            <h2 style="margin: 4rem 0 2rem;">Past Results Archive</h2>
+            <div style="background: white; padding: 2rem; border-radius: 8px;">
+                <ul style="list-style: disc; padding-left: 1.5rem;">
+                    <li style="margin-bottom: 1rem;"><a href="#"
+                            style="color: var(--primary-blue); font-weight: 500;">2024 District Championship Results
+                            (PDF)</a></li>
+                    <li style="margin-bottom: 1rem;"><a href="#"
+                            style="color: var(--primary-blue); font-weight: 500;">2024 Summer League Winners</a></li>
+                    <li style="margin-bottom: 1rem;"><a href="#"
+                            style="color: var(--primary-blue); font-weight: 500;">2023 Annual Report</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="events.html">Events</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">© 2025 Jaipur District Table Tennis Association. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
